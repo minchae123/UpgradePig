@@ -9,6 +9,7 @@ public class PigData
 	public int percentage;
 	public int purchase;
 	public int price;
+	public string pigName;
 }
 
 [System.Serializable]
@@ -28,9 +29,4 @@ public class InfoManager : MonoBehaviour
 		print(json.text);
 		data = JsonUtility.FromJson<PigAllData>(json.text);
 	}
-
-	private void Start()
-	{
-	}
-
 }

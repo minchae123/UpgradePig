@@ -1,0 +1,154 @@
+{
+  "pig": [
+    {
+      "level": "1",
+      "percentage": "100",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "2",
+      "percentage": "100",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "3",
+      "percentage": "97",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "4",
+      "percentage": "95",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "5",
+      "percentage": "95",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "6",
+      "percentage": "90",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "7",
+      "percentage": "90",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "8",
+      "percentage": "87",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "9",
+      "percentage": "87",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "10",
+      "percentage": "85",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "11",
+      "percentage": "80",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "12",
+      "percentage": "77",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "13",
+      "percentage": "76",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "14",
+      "percentage": "75",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "15",
+      "percentage": "70",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "16",
+      "percentage": "65",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "17",
+      "percentage": "60",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "18",
+      "percentage": "55",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "19",
+      "percentage": "50",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "20",
+      "percentage": "45",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "21",
+      "percentage": "40",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "22",
+      "percentage": "35",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "23",
+      "percentage": "30",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "24",
+      "percentage": "30",
+      "purchase": "10",
+      "price": "20"
+    },
+    {
+      "level": "25",
+      "percentage": "25",
+      "purchase": "10",
+      "price": "20"
+    }
+  ]
+}

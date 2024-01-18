@@ -20,13 +20,25 @@ public class PigAllData
 
 public class InfoManager : MonoBehaviour
 {
+	public static InfoManager Instance;
+
 	public TextAsset json;
 
 	public PigAllData data;
+	public PigImageSO pigSprite;
 
 	private void Awake()
 	{
-		print(json.text);
+		if(Instance != null)
+		{
+			print("InfoManager Error");
+		}
+		Instance = this;
 		data = JsonUtility.FromJson<PigAllData>(json.text);
+	}
+
+	public Sprite ChangeImage(int level)
+	{
+		return pigSprite.sprites[level];
 	}
 }

@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
 		if (CheckPercentage(per))
 		{
 			Up(curLevel);
-			curLevel++;
 		}
 		else
 		{
@@ -52,7 +51,12 @@ public class GameManager : MonoBehaviour
 		int percentage = info.data.pig[curLevel].percentage;
 		int price = info.data.pig[curLevel].price;
 		int pur = info.data.pig[curLevel].purchase;
-		uiManager.ChangeUI(s, curLevel, Coin, name, percentage, price, pur);
+		if((ulong)pur <= Coin)
+		{
+			curLevel++;
+			Coin -= (ulong)pur;
+			uiManager.ChangeUI(s, curLevel, Coin, name, percentage, price, pur);
+		}
 	}
 
 	private void Down()

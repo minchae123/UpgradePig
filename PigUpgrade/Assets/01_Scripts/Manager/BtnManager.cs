@@ -13,4 +13,6 @@ public class BtnManager : MonoBehaviour
 	{
 		GameManager.Instance.Sell();
 	}
+
+	
 }

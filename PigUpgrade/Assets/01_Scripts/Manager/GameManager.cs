@@ -25,8 +25,7 @@ public class GameManager : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.K))
-			CheckPercentage(50);
+		
 	}
 
 	public void Upgrade()
@@ -72,9 +71,9 @@ public class GameManager : MonoBehaviour
 
 	public void Sell()
 	{
-		int price = info.data.pig[curLevel - 1].price; // °¡°ÝÀ» °¡Á®¿Í¼­
-		Coin += (ulong)price; // ´õÇØÁÖ°í
-		curLevel = 1; // ·¹º§ ÃÊ±âÈ­
+		int price = info.data.pig[curLevel - 1].price; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½
+		Coin += (ulong)price; // ï¿½ï¿½ï¿½ï¿½ï¿½Ö°ï¿½
+		curLevel = 1; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
 		Down();
 	}
 

@@ -10,169 +10,169 @@
     {
       "level": "2",
       "percentage": "100",
-      "purchase": "2500",
-      "price": "3750",
+      "purchase": "2250",
+      "price": "3375",
       "pigName": "신난 아기돼지"
     },
     {
       "level": "3",
       "percentage": "97",
-      "purchase": "6250",
-      "price": "9375",
+      "purchase": "5063",
+      "price": "7595",
       "pigName": "방구돼장 돼지"
     },
     {
       "level": "4",
       "percentage": "95",
-      "purchase": "15625",
-      "price": "23438",
+      "purchase": "11392",
+      "price": "17088",
       "pigName": "운동하는 돼지"
     },
     {
       "level": "5",
       "percentage": "95",
-      "purchase": "39063",
-      "price": "58595",
+      "purchase": "25632",
+      "price": "38448",
       "pigName": "배부른 돼지"
     },
     {
       "level": "6",
       "percentage": "90",
-      "purchase": "97658",
-      "price": "146487",
+      "purchase": "57672",
+      "price": "86508",
       "pigName": "응원해주는 돼지"
     },
     {
       "level": "7",
       "percentage": "90",
-      "purchase": "244145",
-      "price": "366218",
+      "purchase": "129762",
+      "price": "194643",
       "pigName": "고기 좋아하는 돼지"
     },
     {
       "level": "8",
       "percentage": "87",
-      "purchase": "610363",
-      "price": "915545",
+      "purchase": "291965",
+      "price": "437948",
       "pigName": "헐크 돼지"
     },
     {
       "level": "9",
       "percentage": "87",
-      "purchase": "1525908",
-      "price": "2288862",
+      "purchase": "656921",
+      "price": "985382",
       "pigName": "살찐 돼지"
     },
     {
       "level": "10",
       "percentage": "85",
-      "purchase": "3814770",
-      "price": "5722155",
+      "purchase": "1478072",
+      "price": "2217108",
       "pigName": "궁금한 돼지"
     },
     {
       "level": "11",
       "percentage": "80",
-      "purchase": "9536925",
-      "price": "14305388",
+      "purchase": "3325662",
+      "price": "4988493",
       "pigName": "하트 돼지"
     },
     {
       "level": "12",
       "percentage": "77",
-      "purchase": "23842313",
-      "price": "35763470",
+      "purchase": "7482740",
+      "price": "11224110",
       "pigName": "인사하는 돼지"
     },
     {
       "level": "13",
       "percentage": "76",
-      "purchase": "59605783",
-      "price": "89408675",
+      "purchase": "16836165",
+      "price": "25254248",
       "pigName": "애교 돼지"
     },
     {
       "level": "14",
       "percentage": "75",
-      "purchase": "149014458",
-      "price": "223521687",
+      "purchase": "37881371",
+      "price": "56822057",
       "pigName": "밥먹는 돼지"
     },
     {
       "level": "15",
       "percentage": "70",
-      "purchase": "372536145",
-      "price": "558804218",
+      "purchase": "85233085",
+      "price": "127849628",
       "pigName": "자는 돼지"
     },
     {
       "level": "16",
       "percentage": "65",
-      "purchase": "931340363",
-      "price": "1397010545",
+      "purchase": "191774441",
+      "price": "287661662",
       "pigName": "배고픈 돼지"
     },
     {
       "level": "17",
       "percentage": "60",
-      "purchase": "2328350908",
-      "price": "3492526362",
+      "purchase": "431492492",
+      "price": "647238738",
       "pigName": "화난 돼지"
     },
     {
       "level": "18",
       "percentage": "55",
-      "purchase": "5820877270",
-      "price": "8731315905",
+      "purchase": "970858107",
+      "price": "1456287161",
       "pigName": "훌라우프 돼지"
     },
     {
       "level": "19",
       "percentage": "50",
-      "purchase": "14552193175",
-      "price": "21828289763",
+      "purchase": "2184430741",
+      "price": "3276646112",
       "pigName": "곰돌이와 돼지"
     },
     {
       "level": "20",
       "percentage": "45",
-      "purchase": "36380482938",
-      "price": "54570724407",
+      "purchase": "4914969167",
+      "price": "7372453751",
       "pigName": "저금통 돼지"
     },
     {
       "level": "21",
       "percentage": "40",
-      "purchase": "90951207345",
-      "price": "136426811018",
+      "purchase": "11058680626",
+      "price": "16588020939",
       "pigName": "눈물 돼지"
     },
     {
       "level": "22",
       "percentage": "35",
-      "purchase": "227378018363",
-      "price": "341067027545",
+      "purchase": "24882031409",
+      "price": "37323047114",
       "pigName": "돼지 구이"
     },
     {
       "level": "23",
       "percentage": "30",
-      "purchase": "568445045908",
-      "price": "852667568862",
-      "pigName": "황금 무늬 돼지"
+      "purchase": "55984570670",
+      "price": "83976856005",
+      "pigName": "흑흑 돼지"
     },
     {
       "level": "24",
       "percentage": "30",
-      "purchase": "1421112614770",
-      "price": "2131668922155",
+      "purchase": "125965284008",
+      "price": "188947926012",
       "pigName": "황금 돼지 ? (일뻔)"
     },
     {
       "level": "25",
       "percentage": "25",
-      "purchase": "3552781536925",
-      "price": "5329172305388",
+      "purchase": "283421889018",
+      "price": "425132833527",
       "pigName": "진짜 황금 돼지"
     }
   ]

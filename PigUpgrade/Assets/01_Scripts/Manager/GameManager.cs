@@ -71,9 +71,9 @@ public class GameManager : MonoBehaviour
 
 	public void Sell()
 	{
-		int price = info.data.pig[curLevel - 1].price; // ������ �����ͼ�
-		Coin += (ulong)price; // �����ְ�
-		curLevel = 1; // ���� �ʱ�ȭ
+		int price = info.data.pig[curLevel - 1].price; 
+		Coin += (ulong)price;
+		curLevel = 1; 
 		Down();
 	}
 

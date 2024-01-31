@@ -9,7 +9,7 @@ public class SaveManager : MonoBehaviour
     private string savePath;
     private string saveFileName = "/SaveFile.txt";
 
-    private void Start()
+    private void Awake()
     {
         gameData = new GameData();
         savePath = Application.dataPath + "/SaveData/";
@@ -43,13 +43,16 @@ public class SaveManager : MonoBehaviour
     }
 
 
-    public void LoadGame()
+    public GameData LoadGame()
 	{
-
+        Load();
+        return gameData;
 	}
 
-	public void SaveGame()
+	public void SaveGame(ulong coin)
 	{
+        gameData.coin = coin;
 
+        Save();
 	}
 }

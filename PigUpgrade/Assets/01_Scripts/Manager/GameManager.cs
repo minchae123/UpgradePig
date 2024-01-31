@@ -10,7 +10,10 @@ public class GameManager : MonoBehaviour
 	public int curLevel = 1;
 
 	private UIManager uiManager;
+	private SaveManager saveManager;
 	private InfoManager info;
+
+	private GameData gameData;
 
 	private void Awake()
 	{
@@ -20,7 +23,15 @@ public class GameManager : MonoBehaviour
 		Instance = this;
 
 		uiManager = FindObjectOfType<UIManager>();
+		saveManager = FindObjectOfType<SaveManager>();
 		info = FindObjectOfType<InfoManager>();
+	}
+
+	private void Start()
+	{
+		gameData = saveManager.LoadGame();
+
+		Coin = gameData.coin;
 	}
 
 	private void Update()
@@ -81,5 +92,10 @@ public class GameManager : MonoBehaviour
 	{
 		int rand = Random.Range(20, 100);
 		return rand < percentage ? true : false;
+	}
+
+	private void OnApplicationQuit()
+	{
+		saveManager.SaveGame(Coin);
 	}
 }

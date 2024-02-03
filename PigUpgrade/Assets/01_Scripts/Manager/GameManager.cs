@@ -49,9 +49,15 @@ public class GameManager : MonoBehaviour
 		}
 		else
 		{
-			curLevel = 1;
+			FailUpgrade();
 			Down();
 		}
+	}
+
+	private void FailUpgrade()
+	{
+		curLevel = 1;
+
 	}
 
 	private void Up(int level)

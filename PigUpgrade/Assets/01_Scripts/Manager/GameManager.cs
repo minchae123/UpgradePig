@@ -69,7 +69,11 @@ public class GameManager : MonoBehaviour
 	public void Retry()
 	{
 		print(curLevel);
-		uiManager.FailPanel(false);
+		if (prevent > 0)
+		{
+			uiManager.FailPanel(false);
+			prevent--;
+		}
 	}
 
 
@@ -116,5 +120,11 @@ public class GameManager : MonoBehaviour
 	private void OnApplicationQuit()
 	{
 		saveManager.SaveGame(Coin, prevent);
+	}
+
+	public void PurchasePrevent()
+	{
+		// 뭐로 구매할까요
+		prevent++;
 	}
 }

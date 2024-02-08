@@ -5,5 +5,5 @@ using UnityEngine;
 public class GameData
 {
 	public ulong coin;
-
+	public int prevent;
 }

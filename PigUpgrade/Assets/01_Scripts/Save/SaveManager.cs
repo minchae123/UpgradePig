@@ -49,9 +49,10 @@ public class SaveManager : MonoBehaviour
         return gameData;
 	}
 
-	public void SaveGame(ulong coin)
+	public void SaveGame(ulong coin, int prevent)
 	{
         gameData.coin = coin;
+        gameData.prevent = prevent;
 
         Save();
 	}

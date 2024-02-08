@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
 	public ulong Coin;
 	public int curLevel = 1;
+	public int prevent;
 
 	private UIManager uiManager;
 	private SaveManager saveManager;
@@ -55,18 +56,19 @@ public class GameManager : MonoBehaviour
 
 	private void FailUpgrade()
 	{
-		curLevel = 1;
 		uiManager.FailPanel(true);
 	}
 
 	public void RetryPass()
 	{
 		Down();
+		curLevel = 1;
 		uiManager.FailPanel(false);
 	}
 
 	public void Retry()
 	{
+		print(curLevel);
 		uiManager.FailPanel(false);
 	}
 
@@ -113,6 +115,6 @@ public class GameManager : MonoBehaviour
 
 	private void OnApplicationQuit()
 	{
-		saveManager.SaveGame(Coin);
+		saveManager.SaveGame(Coin, prevent);
 	}
 }

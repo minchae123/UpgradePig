@@ -50,15 +50,26 @@ public class GameManager : MonoBehaviour
 		else
 		{
 			FailUpgrade();
-			Down();
 		}
 	}
 
 	private void FailUpgrade()
 	{
 		curLevel = 1;
-
+		uiManager.FailPanel(true);
 	}
+
+	public void RetryPass()
+	{
+		Down();
+		uiManager.FailPanel(false);
+	}
+
+	public void Retry()
+	{
+		uiManager.FailPanel(false);
+	}
+
 
 	private void Up(int level)
 	{

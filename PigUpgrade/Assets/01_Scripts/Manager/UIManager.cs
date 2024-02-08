@@ -20,6 +20,8 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI priceTxt;
 	[SerializeField] private TextMeshProUGUI purchaseTxt;
 
+	[SerializeField] private GameObject failPanel;
+
 	private void Awake()
 	{
 		if(Instance!= null)
@@ -55,5 +57,10 @@ public class UIManager : MonoBehaviour
 	public void CoinChange(int coin)
 	{
 		coinTxt.text = $"대지 코인 : {coin}";
+	}
+
+	public void FailPanel(bool value)
+	{
+		failPanel.SetActive(value);
 	}
 }

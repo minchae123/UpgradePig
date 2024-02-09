@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 574033148}
   - component: {fileID: 574033147}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: PreventTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2712,6 +2712,7 @@ MonoBehaviour:
   percentageTxt: {fileID: 653304304}
   priceTxt: {fileID: 1780753143}
   purchaseTxt: {fileID: 2099200257}
+  preventTxt: {fileID: 0}
   failPanel: {fileID: 864139152}
 --- !u!1 &2099200255
 GameObject:

@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
 
 	private void Update()
 	{
-		
+
 	}
 
 	public void Upgrade()
@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
 		int percentage = info.data.pig[curLevel].percentage;
 		int price = info.data.pig[curLevel].price;
 		int pur = info.data.pig[curLevel].purchase;
-		if((ulong)pur <= Coin)
+		if ((ulong)pur <= Coin)
 		{
 			curLevel++;
 			Coin -= (ulong)pur;
@@ -105,15 +105,15 @@ public class GameManager : MonoBehaviour
 
 	public void Sell()
 	{
-		int price = info.data.pig[curLevel - 1].price; 
+		int price = info.data.pig[curLevel - 1].price;
 		Coin += (ulong)price;
-		curLevel = 1; 
+		curLevel = 1;
 		Down();
 	}
 
 	private bool CheckPercentage(int percentage)
 	{
-		int rand = Random.Range(20, 100);
+		int rand = Random.Range(0, 100);
 		return rand < percentage ? true : false;
 	}
 
@@ -126,5 +126,12 @@ public class GameManager : MonoBehaviour
 	{
 		// 뭐로 구매할까요
 		prevent++;
+	}
+
+	private void PreventDrop()
+	{
+		int rand = Random.Range(1, 100);
+
+
 	}
 }

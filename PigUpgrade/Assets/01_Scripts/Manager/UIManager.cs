@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI percentageTxt;
 	[SerializeField] private TextMeshProUGUI priceTxt;
 	[SerializeField] private TextMeshProUGUI purchaseTxt;
+	[SerializeField] private TextMeshProUGUI preventTxt;
 
 	[SerializeField] private GameObject failPanel;
 
@@ -62,5 +63,12 @@ public class UIManager : MonoBehaviour
 	public void FailPanel(bool value)
 	{
 		failPanel.SetActive(value);
+	}
+
+	IEnumerator ShowAndHidePrevent()
+	{
+		preventTxt.gameObject.SetActive(true);
+		yield return new WaitForSeconds(1);
+		preventTxt.gameObject.SetActive(false);
 	}
 }

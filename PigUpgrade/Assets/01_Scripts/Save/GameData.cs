@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class GameData
 {
-	public ulong coin;
-	public int prevent;
+	public ulong coin; // 코인
+	public int prevent; // 방지권
 }

@@ -20,11 +20,10 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    public void Save()
+    public void Save() // jSOn ì €ìž¥
     {
         string json = JsonUtility.ToJson(gameData);
         File.WriteAllText(savePath + saveFileName, json);
-        Debug.Log(json);
     }
 
 
@@ -34,11 +33,11 @@ public class SaveManager : MonoBehaviour
         {
             string loadJson = File.ReadAllText(savePath + saveFileName);
             gameData = JsonUtility.FromJson<GameData>(loadJson);
-            Debug.Log("·Îµå ¼º°ø !");
+            Debug.Log("ì €ìž¥ ì„±ê³µ !");
         }
         else
         {
-            Debug.Log("ÀúÀå ¾È´ï !!!");
+            Debug.Log("ì €ìž¥ ì˜¤ë¥˜ !!!");
         }
     }
 

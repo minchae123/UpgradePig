@@ -125,6 +125,7 @@ public class GameManager : MonoBehaviour
 	public void PurchasePrevent()
 	{
 		// 뭐로 구매할까요
+
 		prevent++;
 	}
 

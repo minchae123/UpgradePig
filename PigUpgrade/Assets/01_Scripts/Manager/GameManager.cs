@@ -122,17 +122,13 @@ public class GameManager : MonoBehaviour
 		saveManager.SaveGame(Coin, prevent);
 	}
 
-	public void PurchasePrevent()
-	{
-		// 뭐로 구매할까요
-
-		prevent++;
-	}
-
-	private void PreventDrop()
+	private void PreventDrop() // 5프로 확률로 방지권 드랍
 	{
 		int rand = Random.Range(1, 100);
-
-
+		
+		if(rand > 95)
+		{
+			prevent++;	
+		}
 	}
 }

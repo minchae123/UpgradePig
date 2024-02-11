@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
 	}
 
-	public void Upgrade()
+	public void Upgrade() // 업그레이드 버튼 누르면 확률에 따라 성공 OR 실패
 	{
 		int per = info.data.pig[curLevel - 1].percentage;
 
@@ -54,19 +54,19 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	private void FailUpgrade()
+	private void FailUpgrade() // 실패 하면 실패 패널 띄우기 
 	{
 		uiManager.FailPanel(true);
 	}
 
-	public void RetryPass()
+	public void RetryPass() // 다시 1렙으로 가기
 	{
 		Down();
 		curLevel = 1;
 		uiManager.FailPanel(false);
 	}
 
-	public void Retry()
+	public void Retry() // 그 레벨에서 다시 도전하기(단, 방지권이 있는 경우에만)
 	{
 		print(curLevel);
 		if (prevent > 0)
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
 	}
 
 
-	private void Up(int level)
+	private void Up(int level) // 1단계 레벨업 하면 글씨 셋팅해서 ui 변경하기
 	{
 		Sprite s = info.pigSprite.sprites[curLevel];
 		string name = info.data.pig[curLevel].pigName;
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	private void Down()
+	private void Down() // 실패하면 1레벨로 ui 세팅 변경
 	{
 		Sprite s = info.pigSprite.sprites[0];
 		string name = info.data.pig[0].pigName;
@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
 	}
 
 
-	public void Sell()
+ 	public void Sell() // 팔면 돈 들어오고 1레벨로 변경
 	{
 		int price = info.data.pig[curLevel - 1].price;
 		Coin += (ulong)price;
@@ -111,18 +111,18 @@ public class GameManager : MonoBehaviour
 		Down();
 	}
 
-	private bool CheckPercentage(int percentage)
+	private bool CheckPercentage(int percentage) // 확률 검사
 	{
 		int rand = Random.Range(0, 100);
 		return rand < percentage ? true : false;
 	}
 
-	private void OnApplicationQuit()
+	private void OnApplicationQuit() // 게임 종료 시 저장
 	{
 		saveManager.SaveGame(Coin, prevent);
 	}
 
-	private void PreventDrop() // 5���� Ȯ���� ������ ���
+	private void PreventDrop() // 5프로 확률로 방지권 드랍하기
 	{
 		int rand = Random.Range(1, 100);
 		

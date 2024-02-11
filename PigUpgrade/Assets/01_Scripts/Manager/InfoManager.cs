@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PigData
+public class PigData // 데이터
 {
 	public int level;
 	public int percentage;
@@ -22,7 +22,7 @@ public class InfoManager : MonoBehaviour
 {
 	public static InfoManager Instance;
 
-	public TextAsset json;
+	public TextAsset json; // 데이터 불러오기
 
 	public PigAllData data;
 	public PigImageSO pigSprite;

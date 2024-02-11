@@ -47,17 +47,17 @@ public class UIManager : MonoBehaviour
 	public void ChangeUI(Sprite sp, int level, ulong coin, string name, int per, int price, int pur)
 	{
 		pigImage.sprite = sp;
-		levelTxt.text = $"ÇöÀç ·¹º§ : {level}";
-		coinTxt.text = $"´ëÁö ÄÚÀÎ : {coin}";
+		levelTxt.text = $"í˜„ì¬ ë ˆë²¨ : {level}";
+		coinTxt.text = $"ê°€ì§€ê³  ìˆëŠ” ì½”ì¸ : {coin}";
 		nameTxt.text = $"{name}";
-		percentageTxt.text = $"¼º°ø È®·ü : {per}%";
-		priceTxt.text = $"ÆÇ¸Å °¡°İ : {price}";
-		purchaseTxt.text = $"¾÷±×·¹ÀÌµå °¡°İ : {pur}";
+		percentageTxt.text = $"ê°•í™” ì„±ê³µ í™•ë¥  : {per}%";
+		priceTxt.text = $"ë¼ì§€ íŒë§¤ ì½”ì¸ : {price}";
+		purchaseTxt.text = $"ì—…ê·¸ë ˆì´ë“œì— í•„ìš”í•œ ì½”ì¸: {pur}";
 	}
 
 	public void CoinChange(int coin)
 	{
-		coinTxt.text = $"´ëÁö ÄÚÀÎ : {coin}";
+		coinTxt.text = $"ê°€ì§€ê³  ìˆëŠ” ì½”ì¸ : {coin}";
 	}
 
 	public void FailPanel(bool value)

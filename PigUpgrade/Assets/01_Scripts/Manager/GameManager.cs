@@ -128,6 +128,7 @@ public class GameManager : MonoBehaviour
 		
 		if(rand > 95)
 		{
+			StartCoroutine(uiManager.ShowAndHidePrevent());
 			prevent++;	
 		}
 	}

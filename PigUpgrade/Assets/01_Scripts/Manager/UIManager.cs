@@ -65,7 +65,7 @@ public class UIManager : MonoBehaviour
 		failPanel.SetActive(value);
 	}
 
-	IEnumerator ShowAndHidePrevent()
+	public IEnumerator ShowAndHidePrevent()
 	{
 		preventTxt.gameObject.SetActive(true);
 		yield return new WaitForSeconds(1);

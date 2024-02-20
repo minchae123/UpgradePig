@@ -67,6 +67,7 @@ public class UIManager : MonoBehaviour
 
 	public IEnumerator ShowAndHidePrevent()
 	{
+		print("prev");
 		preventTxt.gameObject.SetActive(true);
 		yield return new WaitForSeconds(1);
 		preventTxt.gameObject.SetActive(false);

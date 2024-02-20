@@ -484,7 +484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &574033146
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -2086228240, guid: e4fe6a25e7d887541a9cb45918b65585, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.1
 --- !u!222 &900000369
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1642,7 +1642,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -2086228240, guid: e4fe6a25e7d887541a9cb45918b65585, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1651,7 +1651,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.1
 --- !u!222 &910000848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2789,7 +2789,7 @@ MonoBehaviour:
   percentageTxt: {fileID: 653304304}
   priceTxt: {fileID: 1780753143}
   purchaseTxt: {fileID: 2099200257}
-  preventTxt: {fileID: 0}
+  preventTxt: {fileID: 574033147}
   failPanel: {fileID: 864139152}
 --- !u!1 &2099200255
 GameObject:

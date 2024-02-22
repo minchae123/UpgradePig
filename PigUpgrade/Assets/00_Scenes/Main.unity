@@ -2926,6 +2926,7 @@ MonoBehaviour:
   priceTxt: {fileID: 1780753143}
   purchaseTxt: {fileID: 2099200257}
   preventTxt: {fileID: 574033147}
+  preventAmountTxt: {fileID: 995301456}
   failPanel: {fileID: 864139152}
 --- !u!1 &2099200255
 GameObject:

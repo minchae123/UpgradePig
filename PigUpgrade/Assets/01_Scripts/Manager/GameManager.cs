@@ -35,11 +35,6 @@ public class GameManager : MonoBehaviour
 		Coin = gameData.coin;
 	}
 
-	private void Update()
-	{
-
-	}
-
 	public void Upgrade() // 업그레이드 버튼 누르면 확률에 따라 성공 OR 실패
 	{
 		int per = info.data.pig[curLevel - 1].percentage;
@@ -75,7 +70,6 @@ public class GameManager : MonoBehaviour
 			prevent--;
 		}
 	}
-
 
 	private void Up(int level) // 1단계 레벨업 하면 글씨 셋팅해서 ui 변경하기
 	{
@@ -129,7 +123,7 @@ public class GameManager : MonoBehaviour
 		
 		if(rand > 95)
 		{
-			StartCoroutine(uiManager.ShowAndHidePrevent());
+			StartCoroutine(uiManager.ShowAndHidePrevent(prevent));
 			prevent++;	
 		}
 	}

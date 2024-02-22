@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI priceTxt;
 	[SerializeField] private TextMeshProUGUI purchaseTxt;
 	[SerializeField] private TextMeshProUGUI preventTxt;
+	[SerializeField] private TextMeshProUGUI preventAmountTxt;
 
 	[SerializeField] private GameObject failPanel;
 
@@ -65,9 +66,9 @@ public class UIManager : MonoBehaviour
 		failPanel.SetActive(value);
 	}
 
-	public IEnumerator ShowAndHidePrevent()
+	public IEnumerator ShowAndHidePrevent(int amount)
 	{
-		print("prev");
+		preventAmountTxt.text = $"방지권 개수 : {amount}";
 		preventTxt.gameObject.SetActive(true);
 		yield return new WaitForSeconds(1);
 		preventTxt.gameObject.SetActive(false);

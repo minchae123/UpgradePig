@@ -66,9 +66,13 @@ public class UIManager : MonoBehaviour
 		failPanel.SetActive(value);
 	}
 
-	public IEnumerator ShowAndHidePrevent(int amount)
+	public void PreventTxt(int amount)
 	{
 		preventAmountTxt.text = $"방지권 개수 : {amount}";
+	}
+
+	public IEnumerator ShowAndHidePrevent()
+	{
 		preventTxt.gameObject.SetActive(true);
 		yield return new WaitForSeconds(1);
 		preventTxt.gameObject.SetActive(false);

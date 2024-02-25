@@ -33,6 +33,9 @@ public class GameManager : MonoBehaviour
 		gameData = saveManager.LoadGame();
 
 		Coin = gameData.coin;
+		prevent = gameData.prevent;
+
+		uiManager.PreventTxt(prevent);
 	}
 
 	public void Upgrade() // 업그레이드 버튼 누르면 확률에 따라 성공 OR 실패
@@ -123,8 +126,9 @@ public class GameManager : MonoBehaviour
 		
 		if(rand > 95)
 		{
-			StartCoroutine(uiManager.ShowAndHidePrevent(prevent));
+			StartCoroutine(uiManager.ShowAndHidePrevent());
 			prevent++;	
+			uiManager.PreventTxt(prevent);
 		}
 	}
 }

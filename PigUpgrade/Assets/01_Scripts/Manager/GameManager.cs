@@ -42,13 +42,20 @@ public class GameManager : MonoBehaviour
 	{
 		int per = info.data.pig[curLevel - 1].percentage;
 
-		if (CheckPercentage(per))
+		if(curLevel < 18)
 		{
-			Up(curLevel);
+			if (CheckPercentage(per))
+			{
+				Up(curLevel);
+			}
+			else
+			{
+				FailUpgrade();
+			}
 		}
 		else
 		{
-			FailUpgrade();
+			print("마지막 레벨입니다");
 		}
 	}
 

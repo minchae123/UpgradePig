@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
 			curLevel++;
 			Coin -= (ulong)pur;
 			PreventDrop();
+			StartCoroutine(uiManager.ShowAndHideSuccess());
 			uiManager.ChangeUI(s, curLevel, Coin, name, percentage, price, pur);
 		}
 	}

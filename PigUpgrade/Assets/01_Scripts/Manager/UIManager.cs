@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI preventAmountTxt;
 
 	[SerializeField] private GameObject failPanel;
+	[SerializeField] private GameObject successShow;
 
 	private void Awake()
 	{
@@ -76,5 +77,12 @@ public class UIManager : MonoBehaviour
 		preventTxt.gameObject.SetActive(true);
 		yield return new WaitForSeconds(1);
 		preventTxt.gameObject.SetActive(false);
+	}
+
+	public IEnumerator ShowAndHideSuccess()
+	{
+		successShow.SetActive(true);
+		yield return new WaitForSeconds(0.5f);
+		successShow.SetActive(false);
 	}
 }

@@ -73,7 +73,6 @@ public class GameManager : MonoBehaviour
 
 	public void Retry() // 그 레벨에서 다시 도전하기(단, 방지권이 있는 경우에만)
 	{
-		print(curLevel);
 		if (prevent > 0)
 		{
 			uiManager.FailPanel(false);

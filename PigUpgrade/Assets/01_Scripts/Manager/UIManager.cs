@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
 		nameTxt.text = $"{name}";
 		percentageTxt.text = $"강화 성공 확률 : {per}%";
 		priceTxt.text = $"돼지 판매 코인 : {price}";
-		purchaseTxt.text = $"업그레이드에 필요한 코인: {pur}";
+		purchaseTxt.text = $"업그레이드에 필요한 코인: \n{pur}";
 	}
 
 	public void CoinChange(int coin)

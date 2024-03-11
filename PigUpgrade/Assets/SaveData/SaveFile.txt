@@ -1,1 +1,1 @@
-{"coin":2000001,"prevent":0}
+{"coin":868542,"prevent":0}

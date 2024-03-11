@@ -55,4 +55,9 @@ public class SaveManager : MonoBehaviour
 
         Save();
 	}
+
+    public void ResetData()
+	{
+
+	}
 }

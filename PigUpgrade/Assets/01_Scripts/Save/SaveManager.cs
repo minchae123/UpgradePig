@@ -58,6 +58,7 @@ public class SaveManager : MonoBehaviour
 
     public void ResetData()
 	{
-
+        gameData.coin = 1000000;
+        gameData.prevent = 0;
 	}
 }

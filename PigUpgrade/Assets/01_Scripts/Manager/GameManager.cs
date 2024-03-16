@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
 	private void Awake()
 	{
+		DontDestroyOnLoad(gameObject);
 		if (Instance != null)
 			print("GameManager Error");
 
@@ -66,8 +67,8 @@ public class GameManager : MonoBehaviour
 
 	public void RetryPass() // 다시 1렙으로 가기
 	{
-		Down();
 		curLevel = 1;
+		Down();
 		uiManager.FailPanel(false);
 	}
 
@@ -94,6 +95,10 @@ public class GameManager : MonoBehaviour
 			PreventDrop();
 			StartCoroutine(uiManager.ShowAndHideSuccess());
 			uiManager.ChangeUI(s, curLevel, Coin, name, percentage, price, pur);
+		}
+		else
+		{
+			StartCoroutine(uiManager.PoorShow());
 		}
 	}
 

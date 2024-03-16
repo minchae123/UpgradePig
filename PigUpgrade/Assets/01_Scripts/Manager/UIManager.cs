@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
@@ -21,6 +22,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI purchaseTxt;
 	[SerializeField] private TextMeshProUGUI preventTxt;
 	[SerializeField] private TextMeshProUGUI preventAmountTxt;
+	[SerializeField] private TextMeshProUGUI poorTxt;
 
 	[SerializeField] private GameObject failPanel;
 	[SerializeField] private GameObject successShow;
@@ -84,5 +86,22 @@ public class UIManager : MonoBehaviour
 		successShow.SetActive(true);
 		yield return new WaitForSeconds(0.5f);
 		successShow.SetActive(false);
+	}
+
+	public IEnumerator PoorShow()
+	{
+		poorTxt.gameObject.SetActive(true);
+		yield return new WaitForSeconds(0.6f);
+		poorTxt.gameObject.SetActive(false);
+	}
+
+	public void LoadScene(int num)
+	{
+		SceneManager.LoadScene(num);
+	}
+
+	public void QuitGame()
+	{
+		Application.Quit();
 	}
 }

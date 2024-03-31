@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
 {
 	public static UIManager Instance;
 
+	private SaveManager saveManager;
+
 	private InfoManager info;
 
 	[SerializeField] private Image pigImage;
@@ -27,26 +29,70 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private GameObject failPanel;
 	[SerializeField] private GameObject successShow;
 
+	[SerializeField] private GameObject escPanel;
+
+	[SerializeField] private Button continueBtn;
+
+	private int escClick = 0;
+
 	private void Awake()
 	{
-		if(Instance!= null)
+		if (Instance != null)
 			print("UIManager Error");
 
 		Instance = this;
 
 		info = FindObjectOfType<InfoManager>();
+		saveManager = FindObjectOfType<SaveManager>();
 	}
 
 	private void Start()
 	{
-		Sprite s = info.pigSprite.sprites[0];
-		string name = info.data.pig[0].pigName;
-		int percentage = info.data.pig[0].percentage;
-		int price = info.data.pig[0].price;
-		int pur = info.data.pig[0].purchase;
+		if(info != null) // 게임 씬에서 쓰고 싶음
+		{
+			Sprite s = info.pigSprite.sprites[0];
+			string name = info.data.pig[0].pigName;
+			int percentage = info.data.pig[0].percentage;
+			int price = info.data.pig[0].price;
+			int pur = info.data.pig[0].purchase;
 
-		ChangeUI(s, 1, GameManager.Instance.Coin, name, percentage, price, pur);
+			ChangeUI(s, 1, GameManager.Instance.Coin, name, percentage, price, pur);
+		}
+
+		if (continueBtn != null) // 스타트씬에서 쓰고싶음
+		{
+			if (saveManager.saveDir == false)
+				continueBtn.interactable = false;
+			else
+				continueBtn.interactable = true;
+		}
 	}
+
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Escape)) 
+		{
+			escClick++;
+			if (!IsInvoking("DoubleClick")) // 한번 누르면
+			{
+				if(escPanel != null)
+					escPanel.SetActive(true);
+				Invoke("DoubleClick", 1.0f);
+			}
+
+		}
+		else if (escClick == 2) // 더블 클릭
+		{
+			CancelInvoke("DoubleClick");
+			QuitGame();
+		}
+	}
+
+	void DoubleClick()
+	{
+		escClick = 0;
+	}
+
 
 	public void ChangeUI(Sprite sp, int level, ulong coin, string name, int per, int price, int pur)
 	{

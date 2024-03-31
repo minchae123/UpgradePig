@@ -6,4 +6,10 @@ public class GameData
 {
 	public ulong coin; // 코인
 	public int prevent; // 방지권
+
+	public GameData()
+	{
+		coin = 1000000;
+		prevent = 0;
+	}
 }
